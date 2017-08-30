@@ -152,7 +152,7 @@ class Dziennik_Model extends Model
 
 	private function _insertMeal($mealNo, $userId)
 	{
-		
+		//code
 	}
 
 }
