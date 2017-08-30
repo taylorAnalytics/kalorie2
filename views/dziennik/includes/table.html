@@ -1,0 +1,43 @@
+<div class="result">
+	<p class="center">Data: <span><?php echo date('j-n-Y', time()); ?></span><br />
+	Dzień treningowy: <input type="checkbox" name="training" id="training-day" /><input type="text" name="addCal" id="addCal" size="3" class="hidden" /></p>
+	<table class="results" id="day-results">
+		<thead class="results-head" id="results-head">
+			<tr>
+				<th></th>
+				<th>kCal</th>
+				<th>Tłuszcze</th>
+				<th>Węglowodany</th>
+				<th>Białko</th>
+			</tr>
+		</thead>
+		<tbody class="results-body" id="results-body">
+			<tr id="results-row">
+				<td class="label" id="result-label">Wynik dzisiaj:</td>
+				<td id="result-kcal"></td>
+				<td id="result-t"></td>
+				<td id="result-w"></td>
+				<td id="result-b"></td>	
+			</tr>
+			<tr id="target-row">
+				<td class="label" id="target-label">Cel:</td>
+				<td id="target-kcal"></td>
+				<td id="target-t"></td>
+				<td id="target-w"></td>
+				<td id="target-b"></td>
+			</tr>
+			<tr id="percent-row">
+				<td class="label" id="percent-label">% celu:</td>
+				<td id="percent-kcal"></td>
+				<td id="percent-t"></td>
+				<td id="percent-w"></td>
+				<td id="percent-b"></td>
+			</tr>
+			<tr id="left-row">
+				<td class="label" id="left-label">Zostało:</td>
+				<td id="left-kcal"></td>
+				<td colspan="3"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

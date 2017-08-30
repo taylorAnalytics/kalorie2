@@ -1,0 +1,75 @@
+<div class="nowy-produkt" id="nowy-produkt-container">
+	<button type="button" class="nowy-produkt" id="nowy-produkt">Nowy produkt</button>
+	<div class="produkty">
+		<form class="form-nowy-produkt" method="post">
+			<table class="nowy-produkt hidden">
+				<thead class="nowy-produkt">
+					<tr>
+						<th></th>
+						<th>Nazwa</th>
+						<th>Jednostka</th>
+						<th id="gram_szt_header" class="hidden">Gram / sztukę</th>
+						<th></th>
+						<th>kCal</th>
+						<th>Tluszcze</th>
+						<th>Weglowodany</th>
+						<th>Bialko</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="nowy-produkt">
+					<tr>
+						<td>
+							<button type="button" class="usun">Usuń</button> 
+						</td>
+						<td>
+							<input type="text" name="nazwa-produktu" class="text" size="30" />
+						</td>
+						<td>
+							<select name="jednostka" class="jednostka">
+								<option value="gramy" class="option-gramy" selected>Gramy</option>
+								<option value="sztuki" class="option-sztuki">Sztuki</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" name="gram_szt" class="hidden number" size="5" />
+						</td>
+						<td>
+							na 100g:
+						</td>
+						<td>
+							<input type="text" name="kCal" class="number" size="5" />
+						</td>
+						<td>
+							<input type="text" name="tluszcze" class="number" size="5" />
+						</td>
+						<td>
+							<input type="text" name="weglowodany" class="number" size="5" />
+						</td>
+						<td>
+							<input type="text" name="bialko" class="number" size="5" />
+						</td>
+						<td>
+							<button type="button" class="zapisz">Zapisz</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="hidden centered text-input-error error" colspan="10">Pole z nazwą może zawierać tylko litery, liczby i przecinek</td>
+					</tr>
+					<tr>
+						<td class="hidden centered number-input-error error" colspan="10">Pola z liczbami mogą zawierać tylko liczby</td>
+					</tr>
+					<tr>
+						<td class="hidden centered allFilled-error error" colspan="10">Uzupełnij wszystkie pola przed zapisaniem produktu</td>
+					</tr>
+					<tr>
+						<td class="hidden centered save-error error" colspan="10"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</div>
+	
+

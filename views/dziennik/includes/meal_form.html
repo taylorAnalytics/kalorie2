@@ -1,0 +1,77 @@
+<div class="posilek" id="posilek-container">
+	<button type="button" class="dodaj-posilek" id="dodaj-posilek">Dodaj posiłek</button>
+	<div class="produkty">
+		<form class="form-posilek" method="post">
+			<table class="posilek hidden">
+				<thead class="posilek">
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th>Jednostka</th>
+						<th>Ilość</th>
+						<th>kCal</th>
+						<th>T</th>
+						<th>W</th>
+						<th>B</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="posilek">
+					<tr class="podsumowanie">
+						<td colspan="5">Cały posiłek:</td>
+						<td class="kCal number"></td>
+						<td class="tluszcze number"></td>
+						<td class="weglowodany number"></td>
+						<td class="bialko number"></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="input">
+						<td>
+							<button type="button" class="usun">Usuń</button>
+						</td>
+						<td>
+							<select name="pp" class="pp">
+								<option selected disabled>Produkt czy potrawa</option>
+								<option value="potrawa">Potrawa</option>
+								<option value="produkt">Produkt</option>
+							</select>
+						</td>
+						<td>
+							<select name="produkt" class="wybor">
+								<option selected disabled>Wybierz...</option>
+							</select>
+						</td>
+						<td>
+							<select name="jednostka" class="jednostka">
+								<option selected disabled>Jednostka</option>
+								<option value="sztuki" class="option-sztuki" disabled>Sztuki</option>
+								<option value="gramy" class="option-gramy" disabled>Gramy</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" name="ilosc" class="ilosc" size="3"/>
+						</td>
+						<td class="kCal number"></td>
+						<td class="tluszcze number"></td>
+						<td class="weglowodany number"></td>
+						<td class="bialko number"></td>
+						<td>
+							<button type="button" class="dodaj">Dodaj</button>
+						</td>
+						<td>
+							<button type="button" class="potrawa-zwin hidden">Zwiń</button><br />
+						</td>
+					</tr>
+					<tr class="submit-button">
+						<td colspan="11">
+							<input type="submit" name="submit" value="Zapisz posiłek" id="submit" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</div>

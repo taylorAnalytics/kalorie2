@@ -1,0 +1,86 @@
+<div class="nowa-potrawa" id="nowa-potrawa-container">
+	<button type="button" class="nowa-potrawa" id="nowa-potrawa">Nowa potrawa</button>
+	<div class="potrawa">
+		<form class="form-nowa-potrawa" method="post">
+			<table class="nowa-potrawa hidden">
+				<thead class="nowa-potrawa">
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th>Jednostka</th>
+						<th>Ilość</th>
+						<th>kCal</th>
+						<th>T</th>
+						<th>W</th>
+						<th>B</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="nowa-potrawa">
+					<tr class="potrawa">
+						<td>
+							<button type="button" class="usun">Usuń</button> 
+						</td>
+						<td>Nazwa potrawy:</td>
+						<td>
+							<input type="text" name="potrawa-nazwa" id="nowa-potrawa-nazwa" size="30" />
+						</td>
+						<td></td>
+						<td></td>
+						<td class="kCal number"></td>
+						<td class="tluszcze number"></td>
+						<td class="weglowodany number"></td>
+						<td class="bialko number"></td>
+						<td></td>
+					</tr>
+					<tr class="skladnik produkt">
+						<td>
+							<button type="button" class="usun">Usuń</button>
+						</td>
+						<td>Składnik:</td>
+						<td>
+							<select name="produkt" class="wybor produkt">
+								<option selected disabled>Wybierz...</option>
+							</select>
+						</td>
+						<td>
+							<select name="jednostka" class="jednostka">
+								<option class="default" selected disabled>Jednostka</option>
+								<option value="sztuki" class="option-sztuki" disabled>Sztuki</option>
+								<option value="gramy" class="option-gramy" disabled>Gramy</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" name="ilosc" class="ilosc" size="3"/>
+						</td>
+						<td class="kCal number"></td>
+						<td class="tluszcze number"></td>
+						<td class="weglowodany number"></td>
+						<td class="bialko number"></td>
+						<td>
+							<button type="button" class="dodaj-skladnik">Dodaj</button>
+						</td>
+					</tr>
+					<tr class="zapisz-skladnik">
+						<td colspan="10">
+							<button type="button" class="zapisz">Zapisz</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="10" class="hidden centered error nazwa-error">Nazwa potrawy może zawierać wyłącznie litery, cyfry i przecinek</td>
+					</tr>
+					<tr>
+						<td colspan="10" class="hidden centered error ilosc-error">Pola z ilością mogą zawierać tylko liczby</td>
+					</tr>
+					<tr>
+						<td colspan="10" class="hidden centered error nazwa-check-error">Wpisana nazwa potrawy już istnieje w bazie danych. Wpisz inną nazwę.</td>
+					</tr>
+					<tr>
+						<td class="hidden centered allFilled-error error" colspan="10">Uzupełnij wszystkie pola przed zapisaniem potrawy</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</div>
