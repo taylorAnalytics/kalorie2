@@ -9,5 +9,3 @@ function __autoload($class) {
 
 $bootstrap = new Bootstrap();
 $bootstrap->init();
-
-echo 'here';
